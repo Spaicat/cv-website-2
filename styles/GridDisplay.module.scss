@@ -1,0 +1,53 @@
+@use "variables" as v;
+
+.container {
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+	.item {
+		position: relative;
+		display: block;
+		background-color: v.$back-color-3;
+		border-radius: v.$bd-radius;
+		margin: 0;
+		padding: 15px;
+		height: 100%;
+		overflow: hidden;
+		cursor: pointer;
+		transition: box-shadow .3s ease-in-out;
+		.header {
+			margin-top: 20px;
+			width: 100%;
+			.title {
+				padding: 10px 3px;
+				h3 {
+					margin: 0;
+					margin-bottom: 10px;
+					font-size: 20px;
+					font-weight: 800;
+					color: v.$main-color;
+				}
+				h4 {
+					margin: 0;
+					margin-bottom: 5px;
+					font-size: 17px;
+					font-weight: 400;
+				}
+			}
+		}
+		.image {
+			overflow: hidden;
+			border-radius: v.$bd-radius;
+			width: 100%;
+			img {
+				height: 10rem;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		&:hover {
+			box-shadow: 10px 10px 22px 7px v.$back-color-2;
+		}
+	}
+}

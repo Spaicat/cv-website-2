@@ -1,0 +1,52 @@
+@use "variables" as v;
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px;
+		flex: 350px 1;
+		padding: 40px;
+		background-color: v.$back-color-3;
+		border-radius: v.$bd-radius;
+		.header {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			img {
+				filter: invert(18%) sepia(70%) saturate(6222%) hue-rotate(354deg) brightness(98%) contrast(74%);
+				width: 2.75rem;
+				height: 2.75rem;
+			}
+			.title {
+				color: v.$main-color;
+				font-size: 30px;
+				margin: 0;
+				margin-top: 20px;
+				margin-left: 30px;
+				text-align: center;
+			}
+		}
+		.text {
+			margin-top: 30px;
+			margin-bottom: 0;
+			font-size: .8rem;
+			text-align: justify;
+			width: 100%;
+		}
+	}
+}
+
+@supports (grid-gap: 1rem) {
+	.container {
+		grid-gap: 30px;
+		.item {
+			margin: 0;
+		}
+	}
+}

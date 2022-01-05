@@ -1,0 +1,62 @@
+@use "variables" as v;
+
+.square {
+	&__title {
+		h3 {
+			font-weight: 800;
+			font-size: 28px;
+			font-style: italic;
+			margin: 0;
+			margin-bottom: 12px;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		grid-gap: 30px;
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex: 250px;
+		box-sizing: border-box;
+		padding: 30px;
+		margin: 0 5px;
+		max-width: 450px;
+		border-radius: v.$bd-radius;
+		background-color: v.$back-color-3;
+		.title {
+			margin: 0;
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 30px;
+			text-align: center;
+		}
+		.img {
+			margin-right: 10px;
+		}
+		.img img {
+			height: 30px;
+		}
+		p {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 350px) {
+	.square__title {
+		min-width: 350px;
+	}
+}
+
+@supports (grid-gap: 1rem) {
+	.square__item {
+		margin: 0;
+	}
+}

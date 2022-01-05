@@ -1,0 +1,108 @@
+@use "variables" as v;
+
+.container {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	.coord {
+		-ms-grid-row: 1;
+			grid-row: 1;
+		-ms-grid-column: 1;
+			grid-column: 1;
+			margin-bottom: 30px;
+			padding: 40px;
+			border-radius: 20px;
+			color: v.$font-color-invert;
+			background: v.$second-color;
+			background-image: url(/images/blur-overlay.png);
+		h4 {
+			color: v.$font-color-invert;
+		}
+		ul {
+			padding: 0;
+		}
+		li {
+			display: flex;
+			padding-bottom: 25px;
+			list-style: none;
+			svg {
+				fill: v.$main-color;
+				width: 20px;
+				height: 20px;
+				margin: auto 15px auto 0;
+			}
+		}
+	}
+	.form {
+		-ms-grid-row: 2;
+			grid-row: 2;
+		-ms-grid-column: 1;
+			grid-column: 1;
+		display: flex;
+		flex-direction: column;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		.field {
+			width: 100%;
+			flex-direction: column;
+		}
+		label {
+			display: inline-block;
+			margin-bottom: 2px;
+			font-size: 24px;
+			font-weight: 800;
+		}
+		input, textarea, button {
+			margin-bottom: 30px;
+			padding: 20px 30px;
+			width: 100%;
+			border: none;
+			border-radius: v.$bd-radius;
+			font-size: 20px;
+			background-color: v.$back-color-2;
+		}
+		textarea {
+			overflow: hidden;
+			resize: vertical;
+			min-height: 100px;
+		}
+		.submit {
+			cursor: pointer;
+			background-color: v.$main-color;
+			color: v.$back-color;
+		}
+		.submit:hover {
+			background-color: v.$main-color-lighter;
+		}
+	}
+}
+
+@media (min-width: 1040px) {
+	.container {
+		-ms-grid-columns: 60% 1fr;
+			grid-template-columns: 60% 1fr;
+		.coord {
+			-ms-grid-row: 1;
+				grid-row: 1;
+			-ms-grid-column: 2;
+				grid-column: 2;
+			margin-left: 40px;
+		}
+		.form {
+			-ms-grid-row: 1;
+				grid-row: 1;
+			-ms-grid-column: 1;
+				grid-column: 1;
+		}
+	}
+	.container input[type="submit"] {
+		max-width: 250px;
+	}
+}
+
+@media (min-width: 600px) {
+	.container .form .half {
+		width: calc(50% - 20px);
+	}
+}

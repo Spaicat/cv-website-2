@@ -1,0 +1,61 @@
+@use "variables" as v;
+
+.timeline {
+	&__item {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		.time {
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding-right: 50px;
+			width: 40%;
+			text-align: end;
+			border-right: 6px solid v.$main-color;
+			background-color: v.$back-color-2;
+			&::after {
+				position: absolute;
+				content: " ";
+				display: flex;
+				right: -15px;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				border: 6px solid v.$main-color;
+				background-color: v.$back-color;
+			}
+		}
+		
+		&:first-child .time {
+			border-radius: v.$bd-radius 0 0 0;
+		}
+		&:last-child .time {
+			border-radius: 0 0 0 v.$bd-radius;
+		}
+		.content {
+			display: flex;
+			margin: 25px 0 25px 50px;
+			padding: 20px 30px;
+			width: 60%;
+			background-color: v.$back-color-3;
+			border-radius: v.$bd-radius;
+			.title {
+				width: 75%;
+				& > * {
+					margin: 0;
+				}
+				h3 {
+					color: v.$main-color;
+					margin-bottom: 10px;
+				}
+			}
+			img {
+				width: 25%;
+				height: fit-content;
+				margin: auto;
+			}
+		}
+	}
+}
