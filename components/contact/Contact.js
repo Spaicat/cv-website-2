@@ -9,6 +9,7 @@ export default function Sidebar(props) {
 	const handleMessage = (event) => {
 		event.preventDefault();
 		console.log("Salut");
+		//nodemailer
 	};
 
 	return (
