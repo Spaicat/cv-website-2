@@ -11,6 +11,11 @@ export default function GridDisplayItem(props) {
 					<h3>{props.title}</h3>
 					<h4>{props.date}</h4>
 				</div>
+				<div className={styles.technologies}>
+					{props.technologies.map((data, key) => {
+						return <div key={key} className={styles.technologies__item}>{data}</div>
+					})}
+				</div>
 			</div>
 		</div>
 	);

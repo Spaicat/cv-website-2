@@ -73,13 +73,13 @@ export default function Sidebar(props) {
 					<SidebarLink link="#home" icon={<HomeIcon />} text="Accueil" />
 					<SidebarLink link="#profile" icon={<ProfileIcon />} text="Profil" />
 					<SidebarLink link="#skills" icon={<SkillsIcon />} text="Compétences" />
-					<SidebarLink link="#project" icon={<ProjectsIcon />} text="Projets" />
 					<SidebarLink link="#education" icon={<EducationIcon />} text="Formation" />
+					<SidebarLink link="#project" icon={<ProjectsIcon />} text="Projets" />
 					<SidebarLink link="#hobbies" icon={<HobbiesIcon />} text="Centres d'intérêt" />
 					<SidebarLink link="#contact" icon={<ContactIcon />} text="Contact" />
 				</nav>
 				<li className={`${styles.element} ${styles.bottom}`}>
-					<a href="/download/CV_Thibault_Trembleau.pdf" target="_blank">
+					<a href="/download/CV_Thibault_Trembleau.pdf" target="_blank" download>
 						<DownloadIcon />
 						<span>Télécharger CV</span>
 					</a>

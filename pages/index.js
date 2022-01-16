@@ -2,11 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import styles from "../styles/Layout.module.scss";
+
 import CalendarIcon from "../media/icon/CalendarIcon";
-import HomeIcon from "../media/icon/HomeIcon";
+import HomeIcon from "../media/icon/HomeLocationIcon";
 import CarIcon from "../media/icon/CarIcon";
 import MailIcon from "../media/icon/MailIcon";
 import PhoneIcon from "../media/icon/PhoneIcon";
+import SkillsIcon from "../media/icon/ToolsIcon";
+import ProjectsIcon from "../media/icon/ScreenIcon";
+import EducationIcon from "../media/icon/GraduationIcon";
+import HobbiesIcon from "../media/icon/BrushIcon";
+import ContactIcon from "../media/icon/EmailIcon";
+
 import SquareContainer from "../components/squareContent/SquareContainer";
 import skillsContent from "../data/skillsContent";
 import TimelineContainer from "../components/timeline/TimelineContainer";
@@ -64,10 +71,10 @@ export default function Home() {
 										<CarIcon /><span>Permis B</span>
 									</li>
 									<li>
-										<PhoneIcon /><span>Telephone : 07 69 46 14 45</span>
+										<PhoneIcon /><span>Telephone : <a href="tel:33769461445" className={styles.link}>+33 7 69 46 14 45</a></span>
 									</li>
 									<li>
-										<MailIcon /><span>Email : trembleau.thibault@gmail.com</span>
+										<MailIcon /><span>Email : <a href="mailto:trembleau.thibault@gmail.com" className={styles.link}>trembleau.thibault@gmail.com</a></span>
 									</li>
 								</ul>
 							</div>
@@ -83,33 +90,33 @@ export default function Home() {
 			</section>
 			<section className={styles.section} id="skills">
 				<div className={styles.section__container}>
-					<h2>Compétences</h2>
+					<h2><SkillsIcon /> Compétences</h2>
 					{skillsContent.map((data, key) => {
 						return (<SquareContainer key={key} title={data.title} content={data.content} />)
 					})}
 				</div>
 			</section>
-			<section className={styles.section} id="project">
+			<section className={styles.section} id="education">
 				<div className={styles.section__container}>
-					<h2>Formation / Expérience</h2>
+					<h2><EducationIcon /> Formation / Expérience</h2>
 					<TimelineContainer content={educationContent} />
 				</div>
 			</section>
-			<section className={styles.section} id="education">
+			<section className={styles.section} id="project">
 				<div className={styles.section__container}>
-					<h2>Projets professionnel et scolaire</h2>
+					<h2><ProjectsIcon /> Projets professionnel et scolaire</h2>
 					<GridDisplayContainer content={projectContent} />
 				</div>
 			</section>
 			<section className={styles.section} id="hobbies">
 				<div className={styles.section__container}>
-					<h2>Centres d'intérêt</h2>
+					<h2><HobbiesIcon /> Centres d'intérêt</h2>
 					<HobbiesContainer content={hobbiesContent} />
 				</div>
 			</section>
 			<section className={styles.section} id="contact">
 				<div className={styles.section__container}>
-					<h2>Contacts</h2>
+					<h2><ContactIcon /> Contacts</h2>
 					<Contact />
 				</div>
 			</section>

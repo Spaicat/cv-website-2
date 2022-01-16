@@ -13,11 +13,29 @@ export default function SquareItem(props) {
 
 	return (
 		<div className={styles.square__item}>
-			<div className={styles.img}>
-				{getImages()}
+			<div className={styles.header}>
+				<div className={styles.img}>
+					{getImages()}
+				</div>
+				<h4 className={styles.title}>{props.title}</h4>
 			</div>
-			<h4 className={styles.title}>{props.title}</h4>
 			<p>{props.text}</p>
+			{props.technologies.length != 0 &&
+				<ul className={styles.details}>
+					{props.technologies.map((data, key) => {
+						return (
+							<li key={key} className={styles.details__item}>
+								{data.image && 
+									<div className={styles.img}>
+										<img alt={data.image.alt} src={"images/" + data.image.src} />
+									</div>
+								}
+								<h5>{data.title}</h5>
+							</li>
+						)
+					})}
+				</ul>
+			}
 		</div>
 	);
 }

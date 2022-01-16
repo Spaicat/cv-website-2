@@ -174,8 +174,25 @@
 	color: v.$font-color;
 }
 
-.btn {
 
+.link {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: -2px;
+		left: 0;
+		border-bottom: 1px solid;
+		width: 0;
+		transition: width .4s cubic-bezier(.22,1,.36,1);
+	}
+	&:hover {
+		color: v.$font-color-link-hover;
+		&::after {
+			width: 100%;
+		}
+	}
 }
 
 @media (min-width: 1040px) {

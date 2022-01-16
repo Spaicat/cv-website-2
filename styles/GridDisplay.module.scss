@@ -3,20 +3,23 @@
 .container {
 	display: grid;
 	grid-gap: 50px;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-template-columns: 1fr;
 
 	.item {
 		position: relative;
-		display: block;
+		display: flex;
+		flex-direction: column;
 		background-color: v.$back-color-3;
 		border-radius: v.$bd-radius;
 		margin: 0;
 		padding: 15px;
 		height: 100%;
-		overflow: hidden;
+		//overflow: hidden;
 		cursor: pointer;
-		transition: box-shadow .3s ease-in-out;
 		.header {
+			display: flex;
+			flex-direction: column;
+			flex: 1 1 auto;
 			margin-top: 20px;
 			width: 100%;
 			.title {
@@ -35,19 +38,43 @@
 					font-weight: 400;
 				}
 			}
+			.technologies {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				margin-top: auto;
+				&__item {
+					margin-right: 10px;
+					margin-bottom: 5px;
+					padding: 3px 14px;
+					border-radius: 50px;
+					background-color: v.$main-color;
+					font-size: 12px;
+					font-weight: 500;
+					color: v.$font-color-invert;
+				}
+			}
 		}
 		.image {
 			overflow: hidden;
 			border-radius: v.$bd-radius;
+			height: 200px;
 			width: 100%;
 			img {
-				height: 10rem;
+				height: 100%;
 				width: 100%;
 				object-fit: cover;
 			}
+			transition: box-shadow .2s ease-in-out;
 		}
-		&:hover {
+		&:hover .image {
 			box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 		}
+	}
+}
+
+@media (min-width: 600px) {
+	.container {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	}
 }

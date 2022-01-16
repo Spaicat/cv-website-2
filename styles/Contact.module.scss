@@ -11,7 +11,7 @@
 			grid-column: 1;
 			margin-bottom: 30px;
 			padding: 40px 30px;
-			border-radius: 20px;
+			border-radius: v.$bd-radius;
 			color: v.$font-color-invert;
 			background: v.$second-color;
 			background-image: url(/images/blur-overlay.png);
@@ -67,11 +67,17 @@
 			border-radius: v.$bd-radius;
 			font-size: 20px;
 			background-color: v.$back-color-2;
+			font-family: v.$main-font;
+
+			&:-webkit-autofill,
+			&:-webkit-autofill:focus {
+				-webkit-box-shadow: 0 0 0px 1000px v.$back-color-2 inset;
+			}
 		}
 		textarea {
 			overflow: hidden;
 			resize: vertical;
-			min-height: 100px;
+			min-height: 250px;
 		}
 		.submit {
 			cursor: pointer;

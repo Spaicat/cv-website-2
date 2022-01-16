@@ -6,10 +6,10 @@ const projectContent = [
 		alt: "projet digitalisation patrimoine historique",
 		image: "ptutS3_main.png",
 		subtitle: "Projet réalisé au 3ème semestre d'IUT",
-		technologies: "HTML, CSS, JS, PHP, SQL, Python",
 		nbGroup: 8,
 		linkSeeProject: "",
 		text: "Le but de ce projet était de créer un outil pour aider des médiévistes dans leur étude des dons des Ducs de France au XVème siècle.\r\n\n Nous avons réalisé une base de données pour remplacer leur Excel, un outil pour transférer le contenu de cet Excel dans la base de données et surtout un site internet sur lequel une fois connecté, ils peuvent ajouter, supprimer et modifier un don et voir une représentation des données sous plusieurs formes utiles à l’analyse : Une restitution sous forme de texte triée par bénéficiaire, une carte des lieux de dons et un calendrier qui trie les dons par date",
+		technologies: ["HTML/CSS", "JS", "PHP", "SQL", "Python"],
 		imagesDetails: [
 			{
 				alt: "page d'accueil du projet",
@@ -32,10 +32,10 @@ const projectContent = [
 		alt: "projet easytasks",
 		image: "easytasks_main.png",
 		subtitle: "Projet réalisé au 2ème semestre d'IUT",
-		technologies: "Java, Swing, SQL",
 		nbGroup: 4,
 		linkSeeProject: "",
 		text: "Ce projet avait pour but de nous faire réaliser une application de gestion de projet pour une entreprise (l'entreprise était factice) afin de nous mettre dans le cadre d'une vraie demande de projet réalisé en entreprise. Ainsi, le logiciel devait avoir une gestion de profil en suivant une grosse structure de base de données déjà établies. Le logiciel avait donc pour objectif de répertorier les projets de l'entreprise et de les gérer.\r\n\nNous avons donc du bien nous concentrer la partie interface homme-machine pour permettre au logiciel d'être intuitif.",
+		technologies: ["Java (Swing)", "SQL"],
 		imagesDetails: [
 			{
 				alt: "Page de connexion du logiciel",
@@ -54,10 +54,10 @@ const projectContent = [
 		alt: "projet présentation IUT",
 		image: "web-iut-1.png",
 		subtitle: "Projet réalisé au 1er semestre d'IUT",
-		technologies: "HTML, CSS, JS, PHP",
 		nbGroup: 3,
 		linkSeeProject: "",
 		text: "Ce projet était un site internet ayant pour objectif de présenter l'IUT aux étudiants venant aux portes ouvertes de l'IUT. Ainsi de notre côté, nous avons décidé de s'orienter vers un style s'approchant de l'univers vidéoludique. Ce site était le premier site que je faisais en groupe et m'a ainsi appris à avoir une certaine organisation dans la réalisation d'un site web en plus de l'apprentissage des langages que nous avons approfondi ou même découvert comme le Javascript.",
+		technologies: ["HTML/CSS", "JS", "PHP"],
 		imagesDetails: [
 			{
 				alt: "Page d'accueil site IUT",
@@ -80,10 +80,10 @@ const projectContent = [
 		alt: "projet jeu-vidéo unity3D",
 		image: "game_with_characters.png",
 		subtitle: "Projet réalisé en prépa informatique",
-		technologies: "C# (Unity3D) / HTML / CSS / PHP",
 		nbGroup: 4,
 		linkSeeProject: "",
 		text: "Ce projet est un jeu vidéo que nous avons dû réaliser sur le moteur de jeu Unity3D. Nous avons donc créé tout le concept de celui-ci afin de pouvoir le coder. De plus, comme cela devait s'apparenter à un vrai projet, il a fallu concevoir un site web en parallèle pour présenter le jeu. \r\n\n Tout cela nous a permis d'acquérir des compétences sur la cohésion de groupe. Nous avons aussi pu apprendre de nouvelles technologies que ça soit des langages comme le C# mais aussi des logiciel comme git pour mieux travailler.",
+		technologies: ["C# (Moteur Unity3D)", "HTML/CSS", "PHP"],
 		imagesDetails: [
 			{
 				alt: "Jeu vidéo unity",
@@ -106,10 +106,10 @@ const projectContent = [
 		alt: "projet jeu-vidéo Space Invaders",
 		image: "projet_javagame.png",
 		subtitle: "Projet réalisé au 2ème semestre d'IUT",
-		technologies: "Java",
 		nbGroup: 2,
 		linkSeeProject: "/download/Les_envahisseurs_de_l'espace.zip",
 		text: "Ce projet était un jeu vidéo que l'on devait choisir dans une liste, cela nous a permis de programmer quelque chose avec beaucoup de liberté et ainsi apprendre des choses à titre personnel. Une grosse partie de structure du programme a du être faite et ainsi on a bien appris comment marchait la programmation orientée objet, notamment en Java.",
+		technologies: ["Java"],
 		imagesDetails: [
 			{
 				alt: "image de notre jeu space invaders",
@@ -124,10 +124,10 @@ const projectContent = [
 		alt: "projet jeu-vidéo textuel",
 		image: "skyproject1.png",
 		subtitle: "Projet réalisé au 1er semestre d'IUT",
-		technologies: "Pascal",
 		nbGroup: 3,
 		linkSeeProject: "",
 		text: "Ce projet était un de nos premier projet en IUT. Il avait pour objectif de réaliser un jeu vidéo sur une console à l'aide du langage Pascal. Ainsi nous devions écrire un jeu de rôle textuel où il fallait réaliser la partie inventaire, profil et choix de l'utilisateur. Ce programme avait aussi pour but de nous faire appliquer nos connaissances du premier semestre à savoir la répartition du travail dans les projets de programmation, la mise en perspective des tâches et la mise en place d'une structure d'un programme.",
+		technologies: ["Pascal"],
 		imagesDetails: [
 			{
 				alt: "Menu du jeu SkyProject",
