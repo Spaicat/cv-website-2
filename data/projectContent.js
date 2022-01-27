@@ -1,5 +1,49 @@
 const projectContent = [
 	{
+		id: "site_renovation_commerce",
+		title: "Site présentation de commerce",
+		date: "Avril 2021 à Mai 2021",
+		alt: "projet présentation commerce",
+		image: "bkeco_mockup.png",
+		subtitle: "Projet réalisé au 2ème semestre d'IUT",
+		nbGroup: 1,
+		linkSeeProject: "http://www.bkeco.fr",
+		text: "Réalisation d'un site internet pour un prestataire de service de renovation d'intérieur. Ce site à été fait seul en colaboration avec le propriétaire du site (Mise en commun du design et du contenu avec Adobe Xd).",
+		technologies: ["HTML/CSS", "JS", "PHP"],
+		imagesDetails: [
+			{
+				alt: "Page de connexion du logiciel",
+				image: "easytasks_main.png"
+			}
+		]
+	},
+	{
+		id: "carnet_sante",
+		title: "Carnet de santé en ligne",
+		date: "Février 2021 à Avril 2021",
+		alt: "projet carnet de santé en ligne",
+		image: "carnet_sante_mockup.png",
+		subtitle: "Projet réalisé au 2ème semestre d'IUT",
+		nbGroup: 6,
+		linkSeeProject: "",
+		text: "",
+		technologies: ["HTML/CSS", "JS", "Node.js", "React.js", "MongoDB"],
+		imagesDetails: [
+			{
+				alt: "Page d'inscription du site",
+				image: "inscription.png"
+			},
+			{
+				alt: "Calendrier regroupant les données de santé",
+				image: "calendrier.png"
+			},
+			{
+				alt: "Page principal du logiciel",
+				image: "profil.png"
+			}
+		]
+	},
+	{
 		id: "digitalisation_patrimoine",
 		title: "Digitalisation patrimoine historique",
 		date: "Octobre 2020 à Janvier 2021",
@@ -78,7 +122,7 @@ const projectContent = [
 		title: "Jeu-vidéo avec Unity3D",
 		date: "Janvier 2019 à Juin 2019",
 		alt: "projet jeu-vidéo unity3D",
-		image: "game_with_characters.png",
+		image: "mockup_website_game.png",
 		subtitle: "Projet réalisé en prépa informatique",
 		nbGroup: 4,
 		linkSeeProject: "",
@@ -94,7 +138,7 @@ const projectContent = [
 				image: "game_tiles_three_screen.png"
 			},
 			{
-				alt: "Jeu vidéo unity",
+				alt: "Article du site internet du jeu",
 				image: "website_article_ex.png"
 			},
 		]
@@ -117,32 +161,6 @@ const projectContent = [
 			}
 		]
 	},
-	{
-		id: "jeu_video_textuel",
-		title: "Jeu-vidéo textuel",
-		date: "Novembre 2019 à Décembre 2019",
-		alt: "projet jeu-vidéo textuel",
-		image: "skyproject1.png",
-		subtitle: "Projet réalisé au 1er semestre d'IUT",
-		nbGroup: 3,
-		linkSeeProject: "",
-		text: "Ce projet était un de nos premier projet en IUT. Il avait pour objectif de réaliser un jeu vidéo sur une console à l'aide du langage Pascal. Ainsi nous devions écrire un jeu de rôle textuel où il fallait réaliser la partie inventaire, profil et choix de l'utilisateur. Ce programme avait aussi pour but de nous faire appliquer nos connaissances du premier semestre à savoir la répartition du travail dans les projets de programmation, la mise en perspective des tâches et la mise en place d'une structure d'un programme.",
-		technologies: ["Pascal"],
-		imagesDetails: [
-			{
-				alt: "Menu du jeu SkyProject",
-				image: "skyproject1.png"
-			},
-			{
-				alt: "Dialogue en jeu",
-				image: "skyproject2.png"
-			},
-			{
-				alt: "Inventaire du jeu",
-				image: "skyproject3.png"
-			}
-		]
-	}
 ]
 
 export default projectContent;

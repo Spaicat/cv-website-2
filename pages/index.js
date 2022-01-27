@@ -59,7 +59,7 @@ export default function Home() {
 						</div>
 						<div className={styles.boxRight}>
 							<div className={styles.infoBox}>
-								<h2>Informations</h2>
+								<h2 className={styles.section__title}>Informations</h2>
 								<ul className={styles.profile__list}>
 									<li>
 										<CalendarIcon /><span>{getAge()} ans</span>
@@ -79,7 +79,7 @@ export default function Home() {
 								</ul>
 							</div>
 							<div className={styles.aboutBox}>
-								<h2>A propos</h2>
+								<h2 className={styles.section__title}>A propos</h2>
 								<p className={styles.description}>
 									Je suis un étudiant en informatique et j'ai des compétences assez polyvalentes. Je suis <strong>passionné</strong> et <strong>motivé</strong> par mon travail tout en étant quelqu'un de <strong>persévérant</strong>. Depuis le collège, je m'intéresse justement au domaine de l'informatique et espère y travailler dans un futur proche. Je pense effectivement que l'informatique est un domaine essentiel dans notre développement et je veux ainsi y participer activement.
 								</p>
@@ -90,7 +90,7 @@ export default function Home() {
 			</section>
 			<section className={styles.section} id="skills">
 				<div className={styles.section__container}>
-					<h2><SkillsIcon /> Compétences</h2>
+					<h2 className={styles.section__title}><SkillsIcon /> Compétences</h2>
 					{skillsContent.map((data, key) => {
 						return (<SquareContainer key={key} title={data.title} content={data.content} />)
 					})}
@@ -98,25 +98,25 @@ export default function Home() {
 			</section>
 			<section className={styles.section} id="education">
 				<div className={styles.section__container}>
-					<h2><EducationIcon /> Formation / Expérience</h2>
+					<h2 className={styles.section__title}><EducationIcon /> Formation / Expérience</h2>
 					<TimelineContainer content={educationContent} />
 				</div>
 			</section>
 			<section className={styles.section} id="project">
 				<div className={styles.section__container}>
-					<h2><ProjectsIcon /> Projets professionnel et scolaire</h2>
+					<h2 className={styles.section__title}><ProjectsIcon /> Projets professionnel et scolaire</h2>
 					<GridDisplayContainer content={projectContent} />
 				</div>
 			</section>
 			<section className={styles.section} id="hobbies">
 				<div className={styles.section__container}>
-					<h2><HobbiesIcon /> Centres d'intérêt</h2>
+					<h2 className={styles.section__title}><HobbiesIcon /> Centres d'intérêt</h2>
 					<HobbiesContainer content={hobbiesContent} />
 				</div>
 			</section>
 			<section className={styles.section} id="contact">
 				<div className={styles.section__container}>
-					<h2><ContactIcon /> Contacts</h2>
+					<h2 className={styles.section__title}><ContactIcon /> Contacts</h2>
 					<Contact />
 				</div>
 			</section>
