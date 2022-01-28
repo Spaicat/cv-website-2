@@ -143,24 +143,6 @@ const projectContent = [
 			},
 		]
 	},
-	{
-		id: "jeu_video_framework",
-		title: "Jeu-vidéo Space Invaders",
-		date: "Avril 2020 à Juin 2020",
-		alt: "projet jeu-vidéo Space Invaders",
-		image: "projet_javagame.png",
-		subtitle: "Projet réalisé au 2ème semestre d'IUT",
-		nbGroup: 2,
-		linkSeeProject: "/download/Les_envahisseurs_de_l'espace.zip",
-		text: "Ce projet était un jeu vidéo que l'on devait choisir dans une liste, cela nous a permis de programmer quelque chose avec beaucoup de liberté et ainsi apprendre des choses à titre personnel. Une grosse partie de structure du programme a du être faite et ainsi on a bien appris comment marchait la programmation orientée objet, notamment en Java.",
-		technologies: ["Java"],
-		imagesDetails: [
-			{
-				alt: "image de notre jeu space invaders",
-				image: "projet_javagame.png"
-			}
-		]
-	},
 ]
 
 export default projectContent;
