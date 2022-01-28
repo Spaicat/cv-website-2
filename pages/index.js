@@ -43,7 +43,7 @@ export default function Home() {
 						<div className={styles.boxLeft}>
 							<h1 className={styles.home__title}>Thibault <br /> Trembleau</h1>
 							<h2 className={styles.home__subtitle}>Etudiant en informatique</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec ipsum libero. Nullam id augue vitae velit egestas tincidunt ac eleifend justo. Fusce vel suscipit sem.</p>
+							<p>Etudiant en 3ème année de licence informatique, je suis à la recherche d’un travail de 2 à 4 mois entre Mai et Août 2022</p>
 						</div>
 						<div className={styles.boxRight}>
 						</div>

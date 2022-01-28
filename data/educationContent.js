@@ -3,7 +3,7 @@ const educationContent = [
 		date: "2021-2022",
 		title: "Licence 3 Informatique",
 		subtitle: "Lyon - Université Claude Bernard Lyon 1",
-		text: "C'est à la suite de cette licence que je souhaite prendre en expérience.",
+		text: "C'est à la suite de cette licence que je souhaite prendre en expérience en travaillant cette été.",
 	},
 	{
 		date: "2021",
@@ -13,13 +13,13 @@ const educationContent = [
 			src: "Inetum.png",
 			alt: "Inetum Logo"
 		},
-		text: "-",
+		text: "J'ai pu intégrer une équipe dans une entreprise d'Inetum situé à Lyon 5eme. Mon stage s'est déroulé dans le service application de celle-ci, j'ai ainsi pu rejoindre une équipe qui s'occupait exclusivement du projet sur lequel j'ai travaillé durant la période de mon stage. J'ai intégré une équipe de 6 personnes.\r\n\n Mon travail durant ces trois mois de stage a été de participer à la réalisation d'une application web pour gérer les sous-concessionnaire des différentes aires d'autoroute du réseau autoroutier d'APRR. Je devais réaliser le développement d’écran de saisie d’activité, de suivi, de tableau de bord ou encore de paramétrage.",
 	},
 	{
 		date: "2019-2021",
 		title: "IUT Informatique",
 		subtitle: "Dijon - Université de Bourgogne",
-		text: "Parti exploré Dijon pour apprendre l'informatique de façon plus pratique que la prépa. J'ai commencé à faire de nombreux projets en cours comme chez moi.",
+		text: "Partie explorer Dijon pour apprendre l'informatique de façon plus pratique que la prépa. J'ai commencé à faire de nombreux projets en cours comme chez moi.",
 	},
 	{
 		date: "2018-2019",
