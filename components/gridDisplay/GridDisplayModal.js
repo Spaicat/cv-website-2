@@ -3,7 +3,7 @@ import styles from "../../styles/Modal.module.scss";
 
 export default function GridDisplayModal({ isShowing, hide, ...props }) {
 	const getNbPeople = () => {
-		return "Projet " + ((props.nbGroup > 1) ? `de ${props.nbGroup} personnes` : "personnel");
+		return "Projet de " + ((props.nbGroup > 1) ? `${props.nbGroup} personnes` : "1 personne");
 	}
 
 	return isShowing 
