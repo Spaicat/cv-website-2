@@ -1,9 +1,9 @@
 export default function MenuIcon() {
 	return (
-		<svg viewBox="0 0 512 512">
-			<path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-			<path d="m 30,50 h 40" />
-			<path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+		<svg viewBox="0 0 24 24">
+			<rect y="11" width="24" height="2" rx="1"/>
+			<rect y="4" width="24" height="2" rx="1"/>
+			<rect y="18" width="24" height="2" rx="1"/>
 		</svg>
 	)
 }

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from "next/link";
 import SidebarLink from "./SidebarLink";
 import styles from "../../styles/Header.module.scss";
@@ -9,27 +9,16 @@ import ProjectsIcon from "../../media/icon/ScreenIcon";
 import EducationIcon from "../../media/icon/GraduationIcon";
 import HobbiesIcon from "../../media/icon/BrushIcon";
 import DownloadIcon from "../../media/icon/DownloadIcon";
-import MenuIcon from "../../media/icon/MenuIcon";
 import ContactIcon from "../../media/icon/EmailIcon";
+import MenuIcon from "../../media/icon/MenuIcon";
+import CloseIcon from "../../media/icon/CloseIcon";
 
 
 export default function Sidebar(props) {
-	let handleHamburger = (event) => {
-		event.preventDefault();
-		let menuGlobal = document.getElementById("sidebar");
-		let hamburger = document.getElementById("hamburger-menu");
-		if (menuGlobal.classList.contains("menu-global-show")) {
-			menuGlobal.classList.remove("menu-global-show");
+	const [headerOpen, setHeaderOpen] = useState(false);
 
-			// Animation
-			hamburger.classList.remove("hamburger-active");
-		}
-		else {
-			menuGlobal.classList.add("menu-global-show");
-
-			// Animation
-			hamburger.classList.add("hamburger-active");
-		}
+	let handleHamburger = () => {
+		setHeaderOpen(!headerOpen);
 	}
 
 	let getPosY = (elt) => {
@@ -59,16 +48,11 @@ export default function Sidebar(props) {
 	}, []);
 
 	return (
-		<header className={styles.sidebar}>
+		<header className={`${styles.sidebar} ${headerOpen ? styles.showMenu : ""}`}>
 			<div className={styles.sidebar__container}>
-				<a className={styles.hamburger} href="#" onClick={handleHamburger}>
-					<MenuIcon />
-				</a>
-				<Link href="/">
-					<a className={styles.logo}>
-						<span>tT</span>
-					</a>
-				</Link>
+				<button className={styles.hamburger} onClick={handleHamburger}>
+					{headerOpen ? <CloseIcon /> : <MenuIcon />}
+				</button>
 				<nav className={styles.menu}>
 					<SidebarLink link="#home" icon={<HomeIcon />} text="Accueil" />
 					<SidebarLink link="#profile" icon={<ProfileIcon />} text="Profil" />

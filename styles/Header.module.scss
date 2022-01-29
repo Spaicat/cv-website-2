@@ -14,6 +14,10 @@
 	color: v.$font-color-2;
 	transition: all .2s ease-in-out;
 	background-color: v.$back-color-3;
+	border-radius: v.$bd-radius;
+	&:hover {
+		width: 300px;
+	}
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -24,6 +28,13 @@
 		height: 100%;
 	}
 	
+	%shared-element {
+		padding: 5px;
+		width: 40px;
+		min-width: 40px;
+		height: 40px;
+		min-height: 40px;
+	}
 	.element {
 		margin-bottom: 35px;
 		&:last-child {
@@ -34,14 +45,16 @@
 			display: flex;
 		}
 		svg {
+			@extend %shared-element;
 			fill: v.$font-color-2;
-			height: 40px;
-			width: 40px;
-			padding: 5px;
 			transition: padding .2s ease-in-out;
 		}
 		span {
-			display: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 v.$size-sidebar/2 - 12.5px;
+			white-space: nowrap;
 		}
 
 		.active svg {
@@ -50,9 +63,6 @@
 		}
 	}
 
-	.logo {
-		display: none;
-	}
 	.menu {
 		margin: auto 0;
 		padding: 20px 15px;
@@ -62,5 +72,40 @@
 	}
 	.hamburger {
 		display: none;
+		padding: 15px;
+		border: none;
+		background: none;
+		cursor: pointer;
+		svg {
+			@extend %shared-element;
+		}
+	}
+}
+
+@media (max-height: 700px), (max-width: 900px) {
+	.sidebar {
+		height: v.$size-sidebar;
+		width: v.$size-sidebar;
+		&.showMenu {
+			height: 100%;
+			width: 100%;
+		}
+		.hamburger {
+			display: flex;
+		}
+		.menu {
+			padding-bottom: 0;
+		}
+		%queries-shared-element {
+			margin-bottom: 15px;
+		}
+		.element {
+			@extend %queries-shared-element;
+			&:last-child {
+				@extend %queries-shared-element;
+			}
+		}
+		.bottom {
+		}
 	}
 }

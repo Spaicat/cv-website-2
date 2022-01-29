@@ -9,7 +9,11 @@
 	padding: 0;
 	margin-left: v.$size-sidebar;
 }
-
+@media (max-height: 700px), (max-width: 900px) {
+	.main {
+		margin-left: initial;
+	}
+}
 
 .section {
 	padding: 10px 0;
