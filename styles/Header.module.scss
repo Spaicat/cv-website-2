@@ -14,10 +14,6 @@
 	color: v.$font-color-2;
 	transition: all .2s ease-in-out;
 	background-color: v.$back-color-3;
-	border-radius: v.$bd-radius;
-	&:hover {
-		width: 300px;
-	}
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -82,10 +78,17 @@
 	}
 }
 
+@media (min-height: 700px) and (min-width: 900px) {
+	.sidebar:hover {
+		width: 300px;
+	}
+}
+
 @media (max-height: 700px), (max-width: 900px) {
 	.sidebar {
 		height: v.$size-sidebar;
 		width: v.$size-sidebar;
+		border-radius: v.$bd-radius;
 		&.showMenu {
 			height: 100%;
 			width: 100%;

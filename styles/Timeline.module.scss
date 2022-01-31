@@ -57,9 +57,11 @@
 					}
 				}
 				img {
+					display: none;
 					margin: auto 0;
 					height: fit-content;
 					width: 30%;
+					object-fit: contain;
 				}
 				&::after {
 					content: '\002B';
@@ -113,5 +115,8 @@
 	.timeline .content {
 		margin: 25px 0 25px 50px;
 		width: 60%;
+		.header img {
+			display: block;
+		}
 	}
 }
